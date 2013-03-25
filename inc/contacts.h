@@ -18,8 +18,13 @@ class Contacts : node::ObjectWrap
         static v8::Handle<v8::Value> list(const v8::Arguments& args);
         static v8::Handle<v8::Value> addCategory(const v8::Arguments& args);
         static v8::Handle<v8::Value> removeCategory(const v8::Arguments& args);
+        static v8::Handle<v8::Value> renameCategory(const v8::Arguments& args);
+        static v8::Handle<v8::Value> isExistCategory(const v8::Arguments& args);
+        static v8::Handle<v8::Value> add(const v8::Arguments& args);
+        static v8::Handle<v8::Value> remove(const v8::Arguments& args);
 
     private:
 };
 
 #endif
+
